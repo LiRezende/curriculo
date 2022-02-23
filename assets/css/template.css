@@ -218,3 +218,18 @@ footer, section {
     left: 200px;
 }
 
+.link-activities a {
+    color: var(--quaternary);
+    font-weight: 600;
+}
+
+/* Qualificações */
+.stacks {
+    display: flex;
+    justify-content: center;
+    gap:1.2em;
+    font-size: 3.5em;
+    color: var(--primary);
+    padding-top: 20px;
+}
+
