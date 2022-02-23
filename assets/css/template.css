@@ -85,17 +85,18 @@ h2 {
 }
 
 h3 {
-    color: var(--tertiary);
+    color: var(--secondary);
     font-size:1.5em;
     font-weight: 600;
 }
 
 span {
     color: var(--tertiary);
+    font-weight: 600;
 }
 
 p {
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 1.2em;
     font-weight: 500;
     text-align: left;
@@ -113,9 +114,37 @@ a {
     gap:2.5em;
 }
 
+mark {
+    color: var(--primary);
+    background-color: var(--quaternary);
+}
+
+.title {
+    text-align: center;
+}
+
+.container-contact-info {
+    display: flex;
+    gap: 0.5em;
+}
+
+.contact-icons {
+    color: var(--tertiary);
+    font-size: 1.2em;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.contact-icons:hover {
+    color: var(--quaternary);
+    background-color: var(--primary);
+    border: 1px solid var(--quaternary);
+    transition-duration: 0.45s;
+}
+
 .card {
-    width: 300px;
-    height: 200px;
     background-color: #fff;
     padding: 30px;
     border-radius: 25px;
@@ -124,9 +153,64 @@ a {
 
 .card:hover {
     background: linear-gradient(90deg, rgba(72, 202, 228), rgba(146, 220, 229) 60%);
-    transition-duration: 0.20s;
+    transition-duration: 0.45s;
 }
 
 .card:hover h3, .card:hover p {
-    color: #2B303A;
+    color: var(--primary);
 }
+
+/* Portfólio Carousel */
+.hero {
+    position: relative; 
+    margin: 0;
+}
+
+.hero .slide-carousel .slide {
+    border-radius: 25px;
+    background-color: #fff;
+    width: 600px;
+    padding: 25px;
+    margin: auto auto 60px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    box-shadow: 0 12px 16px 0 rgba(250, 250, 250, 0.25), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.hero .slide-carousel {
+    display: none;
+}
+
+.hero .slide-carousel.active {
+    display: block;
+}
+
+.hero #next,
+.hero #previous {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.hero #next:hover,
+.hero #previous:hover {
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.hero #next {
+    right: 250px;
+}
+
+.hero #previous {
+    left: 250px;
+}
+

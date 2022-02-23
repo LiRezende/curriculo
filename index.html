@@ -21,7 +21,7 @@
                         <li><a href="#">Sobre Mim</a></li>
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#">Qualificações</a></li>
-                        <li><a href="#">Casos de Sucesso</a></li>
+                        <li><a href="#portfolio">Casos de Sucesso</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
@@ -29,6 +29,7 @@
         </div>
     </header>
     <body>
+        <!-- Apresentação inicial -->
         <section>
             <div class="container">
                 <div>
@@ -44,17 +45,36 @@
                         aprender coisas novas. 
                     </p>
                 </div>
+                <div>
+                    <h3>
+                        <mark>FALE COMIGO</mark></h3>
+                    </h3>
+                    <div class="container-contact-info">
+                        <a href="mailto:librusamolin@gmail.com">
+                            <i class="fas fa-envelope contact-icons"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in contact-icons"></i>
+                        </a>
+                        <a href="https://github.com/LiRezende/" target="_blank">
+                            <i class="fab fa-github-alt contact-icons"></i>                           
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- Serviços -->
         <section id="servicos">
             <div>
                 <span>FEATURES & DESENVOLVIMENTO</span>
-                <h2>O Que Eu Faço</h2>
+                <h2>
+                    O Que Eu Faço
+                </h2>
             </div>
             <div class="container">
                 <div class="card">
                     <h3>
-                        Sites Institucionais
+                        <mark>Sites Institucionais</mark>
                     </h3>
                     <p>
                         Websites profissionais, que conectam você ao se cliente ideal.
@@ -62,7 +82,7 @@
                 </div>
                 <div class="card">
                     <h3>
-                        Lojas Virtuais
+                        <mark>Lojas Virtuais</mark>
                     </h3>
                     <p>
                         Alta performance e segurança para sua loja virtual estourar de vendas durante o
@@ -71,7 +91,7 @@
                 </div>
                 <div class="card">
                     <h3>
-                        Aplicativos
+                        <mark>Aplicativos</mark>
                     </h3>
                     <p>
                         Faço a sua ideia inovadora ganhar vida e conquistar o mundo!
@@ -79,10 +99,71 @@
                 </div>
             </div>
         </section>
+        <!-- Portfólio -->
         <section>
-            <div class="container">
+            <div id="portfolio" class="hero">
+                <div class="title">
+                    <span>PORTFÓLIO</span>
+                    <h2>
+                        Casos De Sucesso
+                    </h2>
+                </div>
+                <div class="slide-carousel active">
+                    <div class="slide">
+                        <div class="testimonial">
+                            <p>
+                                1-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                                qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-carousel">
+                    <div class="slide">
+                        <div class="testimonial">
+                            <p>
+                                2-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                                qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-carousel">
+                    <div class="slide">
+                        <div class="testimonial">
+                            <p>
+                                3-Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                                qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+                <div id="previous" class="fas fa-chevron-left" onclick="previous()"></div>
+            </div>
+        </section>
+        <!-- Experiência -->
+        <section>
+            <div class="title">
                 <span>5+ ANOS DE EXPERIÊNCIA</span>
-                <h2>Qualificações</h2>
+                <h2>
+                    Qualificações
+                </h2>
             </div>
         </section>
     </body>
