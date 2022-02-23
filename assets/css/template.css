@@ -108,24 +108,30 @@ a {
     font-size: 1em;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap:2.5em;
-}
-
 mark {
     color: var(--primary);
     background-color: var(--quaternary);
+}
+
+footer, section {
+    margin: 20px 0;
+    padding: 20px 0;
 }
 
 .title {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    gap:2.5em;
+}
+
 .container-contact-info {
     display: flex;
     gap: 0.5em;
+    justify-content: center;
 }
 
 .contact-icons {
