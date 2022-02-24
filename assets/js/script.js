@@ -9,6 +9,23 @@ window.onload = function () {
     });
 };
 
+// Animação do Título
+const title = document.querySelector('h1.title-animation');
+
+function writerAnimation(title) {
+  const titleArray = title.innerText.split('');
+  title.innerText = '';
+  titleArray.forEach((char, i) => {
+    setTimeout(() => title.innerHTML += char, 75 * i);
+  });
+}
+
+writerAnimation(title);
+
+setInterval(function keepWriting() {
+  writerAnimation(title);
+}, 3000);
+
 // Portfólio Carousel
 let slides = document.querySelectorAll(".slide-carousel");
 let index = 0;
