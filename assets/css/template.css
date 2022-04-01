@@ -20,29 +20,15 @@ body {
   }
 
 /* Header and Menu */
-.top-bar {
-    padding-left:10px;
-    padding-right:10px;
-}
-
 .top-bar a:hover {
     color: var(--tertiary);
 }
 
-header {
-    display: flex;
-    justify-content: center;
-}
-
 .container-header {
-    display: flex;
-    justify-content: space-between;
-    gap:2.5em;
-}
-
-.logo, .menu {
+    padding-top: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 nav ul, nav li {
@@ -106,7 +92,6 @@ p {
     color: var(--primary);
     font-size: 1.2em;
     font-weight: 500;
-    text-align: left;
     padding:10px 0;
 }
 
@@ -256,11 +241,16 @@ h1.title-animation::after {
 /* Qualificações */
 .stacks {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap:1.2em;
     font-size: 3.5em;
     color: var(--primary);
     padding-top: 20px;
+}
+
+.stacks p {
+    font-size: 16px;
 }
 
 /* Mobile Styles */
@@ -327,6 +317,10 @@ h1.title-animation::after {
     .stacks {
         gap:1em;
         font-size: 3em;
+    }
+
+    .stacks p {
+        font-size:12px;
     }
 }
 
