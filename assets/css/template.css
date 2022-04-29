@@ -15,17 +15,21 @@ body {
     background-color: #eee;
 }
 
+.section-container {
+    padding:40px 10px;
+}
+
 /* Variables */
 :root {
-    --primary: #2B303A;
-    --secondary: #666;
-    --tertiary: #48cae4;
-    --quaternary: #92dce5;
+    --primary: #120209;
+    --secondary: #37061B;
+    --tertiary: #5c0a2e;
+    --quaternary: #931049;
   }
 
 /* Header and Menu */
 .top-bar a:hover {
-    color: var(--tertiary);
+    color: var(--quaternary);
 }
 
 .container-header {
@@ -104,11 +108,6 @@ a {
     font-size: 1em;
 }
 
-mark {
-    color: var(--primary);
-    background-color: var(--quaternary);
-}
-
 footer, section {
     margin: 20px 0;
     padding: 20px 0;
@@ -179,12 +178,12 @@ h1.title-animation::after {
 
 .card:hover {
     border: 2px solid var(--primary);
-    background: linear-gradient(90deg, rgba(72, 202, 228), rgba(146, 220, 229) 60%);
+    background: linear-gradient(90deg, rgba(55, 6, 27), rgba(147, 16, 73) 60%);
     transition-duration: 0.45s;
 }
 
 .card:hover h3, .card:hover p {
-    color: var(--primary);
+    color: #fdedf4;
 }
 
 /* Portfólio Carousel */
